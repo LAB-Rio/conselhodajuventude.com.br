@@ -1,0 +1,65 @@
+
+
+body { -webkit-font-smoothing: antialiased; background: #EEEEEE } 
+#header { background: #C57FC1; color: white; padding: .4em 0 }
+
+
+#main-content { 
+  position: relative;
+  background: url('../images/main-content.png') no-repeat center bottom; 
+  background-size: 100%;
+  min-height: 600px;
+}
+
+.element { position: absolute; width: 100px; bottom: 0% }
+.move-right { 
+  -webkit-animation: move-right 20s infinite;
+  animation: move-right 20s infinite;
+
+}
+.move-left {
+  -webkit-animation: move-left 20s infinite;
+  animation: move-left 20s infinite;
+
+
+
+}
+
+
+@-webkit-keyframes move-left { 
+    0% { right: 0% }
+    100% { right: 100% } 
+}
+
+
+
+@keyframes move-left { 
+    0% { right: 0% }
+    100% { right: 100% }
+}
+
+
+
+
+
+
+
+
+
+
+
+@-webkit-keyframes move-right { 
+    0% { left: 0% }
+    100% { left: 100% } 
+}
+
+
+
+
+@keyframes move-right { 
+    0% { left: 0% }
+    100% { left: 100% }
+}
+
+
+
