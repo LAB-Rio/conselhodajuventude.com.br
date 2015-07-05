@@ -1,28 +1,69 @@
 
 
 body { -webkit-font-smoothing: antialiased; background: #EEEEEE } 
+h2 { font-family: "Francois One"; text-transform: uppercase; color: #C57FC1; text-align: center; font-weight: bold }
+
+.text-uppercase { text-transform: uppercase; }
+
 #header { background: #C57FC1; color: white; padding: .4em 0 }
+#header a { color: white;  font-family: 'Francois One'; display: inline-block; margin-left: 1em; padding: .8em; }
+
+.button { 
+  background:#C57FC1; 
+  color: white; 
+  font-family: "Francois One"; 
+  font-weight: bold; 
+  font-size: 1.4em; 
+  text-transform: uppercase;
+  border-radius: 6px; 
+}
+
+.button:hover {
+  background: white; 
+  color: #C57FC1; 
+}
+
+.link-btn {
+  background: #B664B2;
+  color: white;
+  font-size: 1em;
+  margin-top: 3.5%;
+}
+
+#header a:hover, .link-btn:hover { 
+  color: #C57FC1;
+  background: white;
+}
 
 
 #main-content { 
   position: relative;
   background: url('../images/main-content.png') no-repeat center bottom; 
   background-size: 100%;
-  min-height: 600px;
+  height: 89% !important;
+  overflow: hidden;
 }
 
+#main-content h2 { margin-top: 2em; }
+ 
+#inner-content p { font-size: 1.1em }
 .element { position: absolute; width: 100px; bottom: 0% }
-.move-right { 
-  -webkit-animation: move-right 20s infinite;
-  animation: move-right 20s infinite;
 
+.move-bike {
+  -webkit-animation: move-left 30s infinite;
+  animation: move-left 30s infinite;
 }
+
+.move-right { 
+  -webkit-animation: move-right 15s infinite;
+  animation: move-right 15s infinite;
+}
+
+
+
 .move-left {
   -webkit-animation: move-left 20s infinite;
   animation: move-left 20s infinite;
-
-
-
 }
 
 
