@@ -6,7 +6,10 @@ h2 { font-family: "Francois One"; text-transform: uppercase; color: #C57FC1; tex
 .text-uppercase { text-transform: uppercase; }
 
 #header { background: #C57FC1; color: white; padding: .4em 0 }
-#header a { color: white;  font-family: 'Francois One'; display: inline-block; margin-left: 1em; padding: .8em; }
+#header .nav a { color: white;  font-family: 'Francois One'; display: inline-block; margin-left: 1em; padding: .8em; }
+
+.logo a { display: inline-block }
+.logo a:hover { background: rgba(255,255,255,0.2) !important; }
 
 .button { 
   background:#C57FC1; 
@@ -30,7 +33,7 @@ h2 { font-family: "Francois One"; text-transform: uppercase; color: #C57FC1; tex
   margin-top: 3.5%;
 }
 
-#header a:hover, .link-btn:hover { 
+#header .nav a:hover, .link-btn:hover { 
   color: #C57FC1;
   background: white;
 }
@@ -44,14 +47,57 @@ h2 { font-family: "Francois One"; text-transform: uppercase; color: #C57FC1; tex
   overflow: hidden;
 }
 
-#main-content h2 { margin-top: 2em; }
+#main-content h2 { margin-top: 2em; z-index: 90; position: relative }
  
 #inner-content p { font-size: 1.1em }
+
 .element { position: absolute; width: 100px; bottom: 0% }
+.cloud { top: 15%; z-index: 0 }
+.cloud-left, .cloud-left2 { top: 10% }
+
+.cloud-left { right: 10% }
+.cloud-right { right: 10% }
+
+.cloud-left { 
+  -webkit-animation: move-right 160s infinite;
+  animation: move-right 160s infinite;
+}
+
+
+
+.cloud-left2 { 
+  -webkit-animation: move-right 280s infinite;
+  animation: move-right 280s infinite;
+}
+
+ 
+
+
+
+
+
+.cloud-right2 { 
+  -webkit-animation: move-left 160s infinite;
+  animation: move-left 160s infinite;
+}
+
+ 
+
+.cloud-right { 
+  -webkit-animation: move-left 280s infinite;
+  animation: move-left 280s infinite;
+}
 
 .move-bike {
   -webkit-animation: move-left 30s infinite;
   animation: move-left 30s infinite;
+  bottom: 7px;
+  z-index: 1;
+}
+
+.move-bike-left {
+  -webkit-animation: move-right 30s infinite;
+  animation: move-right 30s infinite;
 }
 
 .move-right { 
@@ -64,6 +110,7 @@ h2 { font-family: "Francois One"; text-transform: uppercase; color: #C57FC1; tex
 .move-left {
   -webkit-animation: move-left 20s infinite;
   animation: move-left 20s infinite;
+  z-index: 2
 }
 
 
