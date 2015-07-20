@@ -116,8 +116,8 @@ h2 { font-family: "Francois One"; text-transform: uppercase; color: #C57FC1; tex
 
 
 .showUp-text { 
-  -webkit-animation: show-text 20s linear;
-  animation: show-text 20s linear;  
+  -webkit-animation: show-text .5s linear;
+  animation: show-text 1.2s linear;  
 }
 
 
@@ -159,16 +159,18 @@ h2 { font-family: "Francois One"; text-transform: uppercase; color: #C57FC1; tex
 
 
 @-webkit-keyframes show-text { 
-    0% { zoom: 0% }
-    100% { zoom: 1 } 
+    0% { opacity: 0; transform: scale(0); }
+    55% { opacity: 1; transform: scale(1.4); }
+    100% { opacity: 1; transform: scale(1); }
 }
 
 
 
 
 @keyframes show-text { 
-    0% { zoom: 0 }
-    100% { zoom: 1 }
+    0% { opacity: 0; transform: scale(0); }
+    55% { opacity: 1; transform: scale(1.4); }
+    100% { opacity: 1; transform: scale(1); }
 }
 
 
