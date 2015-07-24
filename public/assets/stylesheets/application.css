@@ -33,7 +33,18 @@ h2 { font-family: "Francois One"; text-transform: uppercase; color: #C57FC1; tex
   margin-top: 3.5%;
 }
 
-#header .nav a:hover, .link-btn:hover { 
+#header .nav a {
+  opacity: .5
+}
+
+#header .nav a:hover {
+  background: rgba(255,255,255,0.2);
+  opacity: 1
+
+}
+
+
+.link-btn:hover { 
   color: #C57FC1;
   background: white;
 }
