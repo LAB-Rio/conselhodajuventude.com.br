@@ -69,14 +69,9 @@
         
         </h2>
         <br/>
-
-        <div id="player"></div>
-        <br/>
-        <h5><a style="background: rgba(255,255,255,1); padding: .6em; color: #444" target="_blank" href="https://drive.google.com/file/d/0B0soO03hL7CRUm02dVl4TzdNWnc/view">Veja a Chamada Pública do Conselho da Juventude</a></h5> 
-        <br/>
+        <h5><a style="padding: .6em;" target="_blank" href="https://drive.google.com/file/d/0B0soO03hL7CRUm02dVl4TzdNWnc/view">Veja a Chamada Pública do Conselho da Juventude</a></h5> 
+        <br/><br/>
         <a href="./inscricao" class="button" style="z-index: 9999" target="_blank">Inscreva-se</a>
-        <br/><br/>
-        <br/><br/>
       </div>
     </div>
     &nbsp;
@@ -108,53 +103,6 @@
 
 
 
-
-
-<script src="http://jwpsrv.com/library/zJkgsJZJEeK6GCIACpYGxA.js"></script>
-<script type="text/javascript">
-var ua = navigator.userAgent.toLowerCase();
-var isAndroid = ua.indexOf("android") > -1; //&& ua.indexOf("mobile");
-if(isAndroid) {
-  // Do something!
-  // Redirect to Android-site?
- // window.location = 'rtsp://54.232.87.185:1935/prefeitorj/prefeitorj';
-window.location = 'http://54.232.87.185:1935/prefeitorj/prefeitorj/playlist.m3u8';
-}
-
-
-
-   if (navigator.userAgent.match(/android/i) != null){
-      jwplayer("player").setup({
-         file: "http://54.232.87.185:1935/prefeitorj/prefeitorj",
-         type: "mp4",
-         primary: "html5"
-      });
-   } else {
-      jwplayer("player").setup({
-         sources: [{
-            file: "rtmp://54.232.87.185:1935/prefeitorj/prefeitorj"
-         },{
-            file: "http://54.232.87.185:1935/prefeitorj/prefeitorj/playlist.m3u8"
-         }],
-         rtmp: {
-            bufferlength: 3,
-         },
-         'autostart': 'true',
-         image: 'http://i.imgur.com/YAzZa4v.png',
-         title: '',
-         //width: '640',
-         //height: '360',
-         aspectratio: '16:9',
-         autostart: 'false',
-         repeat: 'true',
-         fallback: false,
-         // sharing: {
-         //link: "https://liveu.websiteseguro.com/ucancdn/prefeitura_rj/index.html",
-         //code: '<iframe src="http://www.ucan.com.br/ucancdn/prefeitura_rj/index.html" width="480" height="360" frameborder="0" scrolling="auto"></iframe>',
-       // }
-      });
-   }
-</script>
 
 
 
