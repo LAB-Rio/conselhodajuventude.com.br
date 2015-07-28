@@ -8,6 +8,8 @@ h2 { font-family: "Francois One"; text-transform: uppercase; color: #C57FC1; tex
 #header { background: #C57FC1; color: white; padding: .4em 0 }
 #header .nav a { color: white;  font-family: 'Francois One'; display: inline-block; margin-left: 1em; padding: .8em; }
 
+#player { position: relative; margin: 0 auto; max-width: 560px; width: 100% !important; z-index: 9999; display: block; min-height: 300px; height: auto}
+
 .logo a { display: inline-block }
 .logo a:hover { background: rgba(255,255,255,0.2) !important; }
 
