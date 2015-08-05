@@ -5,6 +5,8 @@ h2 { font-family: "Francois One"; text-transform: uppercase; color: #C57FC1; tex
 
 .text-uppercase { text-transform: uppercase; }
 
+.iframe-width iframe { width: 90%; margin: 0 auto; display: block } 
+
 #header { background: #C57FC1; color: white; padding: .4em 0 }
 #header .nav a { color: white;  font-family: 'Francois One'; display: inline-block; margin-left: 1em; padding: .8em; }
 
