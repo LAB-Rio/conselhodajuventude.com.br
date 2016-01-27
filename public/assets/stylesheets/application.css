@@ -1,7 +1,118 @@
+/* Default Rules */
+*, *:after, *:before {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
 
 iframe { border: none }
 body { -webkit-font-smoothing: antialiased; background: #EEEEEE } 
 h2 { font-family: "Francois One"; text-transform: uppercase; color: #C57FC1; text-align: center; font-weight: bold }
+.logo{
+  margin-top: 10px;
+}
+/* end Default Rules */
+.title { font-size: 40px; color: #000; }
+
+
+/*Component Avatar*/
+.avatar { boder-radius: 50%;}
+.avatar .avatar__name { font-size:20px;}
+.avatar:hover {
+  background: #000;
+}
+
+/*Menu*/
+.menu {
+  line-height: 1;
+}
+.menu__item {
+	display: block;
+	margin: 1em 0;
+}
+
+.menu__link {
+	font-size: 1.05em;
+	font-weight: bold;
+	display: block;
+	padding: 1em;
+	cursor: pointer;
+	  color: #fff;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-touch-callout: none;
+	-khtml-user-select: none;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.menu__link:hover,
+.menu__link:focus {
+	outline: none;
+}
+
+.menu__list {
+	display: flex;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.menu--conselho a{
+  color: #fff;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+  
+  display: inline-block;
+  padding: 15px 20px;
+  position: relative;
+}
+
+.menu--conselho a:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+.menu .menu--conselho .menu__link {
+  position: relative;
+  display: block;
+  margin: 0 1.5em;
+	padding: 0.75em 0;
+  text-align: center;
+  color: #fff;
+  -webkit-transition: color 0.3s;
+	transition: color 0.3s;
+	
+}
+.menu--conselho .menu__link:hover,
+.menu--conselho .menu__link:focus {
+  color: #fff;
+}
+.menu--conselho .menu__item--current .menu__link {
+  color: #FFF;
+}
+.menu--conselho  a:after {
+	background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.menu--conselho a:hover:after{
+   width: 100%; 
+    left: 0; 
+}
+.menu--conselho .menu__item--current .menu__link::before {
+	-webkit-transform: scale3d(1, 1, 1);
+	transform: scale3d(1, 1, 1);
+	-webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+}
 
 .text-uppercase { text-transform: uppercase; }
 
