@@ -13,13 +13,30 @@ h2 { font-family: "Francois One"; text-transform: uppercase; color: #C57FC1; tex
 /* end Default Rules */
 .title { font-size: 40px; color: #000; }
 
+.title {
+  display: inline-block;
+  text-align: center;
+}
+.title::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  display: inline-block;
+  height: 1em;
+  width: 100%;
+  border-bottom: 5px solid;
+  margin-top: -30px;
+}
 
 /*Component Avatar*/
-.avatar { boder-radius: 50%;}
-.avatar .avatar__name { font-size:20px;}
-.avatar:hover {
-  background: #000;
-}
+.card { }
+.avatar { border-radius: 50%; max-width:221px; max-height:221px; height: auto;}
+.avatar .avatar__name { font-size:12px;}
+.avatar .avatar__info { font-size: 10px;}
+.card .title { font-size: 14px;}
+.card .description { font-size: 10px;}
+
+.info-box { background: url('http://lorempixel.com/2130/588/city/') no-repeat center bottom}
 
 /*Menu*/
 .menu {
@@ -53,7 +70,7 @@ h2 { font-family: "Francois One"; text-transform: uppercase; color: #C57FC1; tex
 
 .menu__list {
 	display: flex;
-	margin: 0;
+	margin: 5px;
 	padding: 0;
 	list-style: none;
 }
@@ -124,8 +141,8 @@ h2 { font-family: "Francois One"; text-transform: uppercase; color: #C57FC1; tex
 #player, #player_wrapper { position: relative; margin: 0 auto; max-width: 560px; width: 100% !important; z-index: 9999; display: block; min-height: 300px; height: auto}
 
 .logo a { display: inline-block }
-.logo a:hover { background: rgba(255,255,255,0.2) !important; }
 
+.link-default { padding: .6em; margin-bottom: 1em; display: block; }
 .button { 
   background:#C57FC1; 
   color: white; 
@@ -139,6 +156,19 @@ h2 { font-family: "Francois One"; text-transform: uppercase; color: #C57FC1; tex
 .button:hover {
   background: white; 
   color: #C57FC1; 
+}
+button:focus, .button:hover, .button:focus {
+    background: white; 
+    color: #C57FC1; 
+}
+.site-flex {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.flex-content {
+  flex: 1;
 }
 
 .link-btn {

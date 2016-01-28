@@ -15,9 +15,22 @@ get '/transparencia' do
 end
 
 get '/sobre' do
-  send_file 'public/saiba_mais.html'
+  send_file 'public/sobre.html'
 end
 
 get '/calendario' do
   send_file 'public/calendario.html'
+end
+
+get '/slim' do
+  @title = "Conselho da Juventude"
+  slim :index
+end
+
+get '/sobre-slim' do
+  slim :sobre, :layout => true
+end
+
+get '/home' do
+  slim :home, :layout => true
 end
