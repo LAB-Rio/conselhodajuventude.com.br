@@ -7,11 +7,12 @@
  |_|  \__,_| |_.__/  (_) |_| \_\ |___|  \___/ 
 ```
 
-Use rvm
-
+###Use rvm
+```
 $ rvm --default use 2.2.3 
 $ gem install bundler
 $ bundle isntall
 $ bundle exec rackup  -o $IP  -p $PORT
-## Run Cloud9 Server
+```
+### Run Cloud9 Server
 ```ruby app.rb -p $PORT -o $IP```
