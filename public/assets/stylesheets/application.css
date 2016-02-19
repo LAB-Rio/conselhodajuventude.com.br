@@ -36,7 +36,30 @@ h2 { font-family: "Francois One"; text-transform: uppercase; color: #C57FC1; tex
 .card .description { font-size: 10px;}
 
 
+.menu__list span {
+  padding: 15px 20px;
+}
 
+.title-flex.title-underline.calendario:after {
+    position: absolute;
+    content: '';
+    bottom: 57.5rem;
+    left: 50%;
+    margin-left: -3.75rem;
+    width: 7.5rem;
+    height: 1px;
+    background: none;
+}
+.group {
+    position: absolute;
+    top: 198px;
+    z-index: 9999;
+    color: #C57FC1;
+    left: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+}
 /*Menu*/
 .menu {
   line-height: 1;
@@ -73,7 +96,7 @@ h2 { font-family: "Francois One"; text-transform: uppercase; color: #C57FC1; tex
 	padding: 0;
 	list-style: none;
 }
-.menu--conselho a{
+.menu--conselho .menu__list a{
   color: #fff;
   text-decoration: none;
   letter-spacing: 0.15em;
@@ -83,7 +106,7 @@ h2 { font-family: "Francois One"; text-transform: uppercase; color: #C57FC1; tex
   position: relative;
 }
 
-.menu--conselho a:hover:after { 
+.menu--conselho .menu__list a:hover:after { 
   width: 100%; 
   left: 0; 
 }
@@ -105,7 +128,7 @@ h2 { font-family: "Francois One"; text-transform: uppercase; color: #C57FC1; tex
 .menu--conselho .menu__item--current .menu__link {
   color: #FFF;
 }
-.menu--conselho  a:after {
+.menu--conselho .menu__list a:after {
 	background: none repeat scroll 0 0 transparent;
   bottom: 0;
   content: "";
@@ -117,7 +140,7 @@ h2 { font-family: "Francois One"; text-transform: uppercase; color: #C57FC1; tex
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
 }
-.menu--conselho a:hover:after{
+.menu--conselho .menu__list a:hover:after{
    width: 100%; 
     left: 0; 
 }
@@ -207,14 +230,13 @@ span.icon img {
     background: rgba(204, 202, 202, 0.13);
     padding: 30px;
 }
-
+.MarcoLegal.Aligner.not-background{
+  background: none;
+}
 #visoes .title-underline:after {
     content: '';
-    bottom: 47.5rem;
+    bottom: 29.5rem;
 }
-
-
-#visoes .title-underline:after { content: ''; bottom: 20.5rem; }
 .logo a { display: inline-block }
 
 .content-cards{
@@ -496,15 +518,31 @@ button:focus, .button:hover, .button:focus {
     100% { top: 0px; opacity: 1  }
 }
 
-.video .description-box { background: #333; font-size: 10px;}
-/* Videos */
-.description-box{
-    background: #ccc;
+.video .description-box { background: rgba(204, 202, 202, 0.13);
     width: 100%;
     height: auto;
     text-align: center;
+    border-radius: 2px;
+    border: 1px solid rgba(204, 202, 202, 0.13);
+    margin-bottom: 20px;
 }
-.description-box .description { font-size: 15px;}
+/* Videos */
+.description-box{
+    background: rgba(204, 202, 202, 0.13);
+    width: 100%;
+    height: auto;
+    text-align: center;
+    border-radius:2px;
+    border: 1px solid rgba(204, 202, 202, 0.13);
+    margin-bottom: 20px;
+}
+.description-box .description { font-size: 15px; padding: 5px;}
+.video .js-video{
+      padding-bottom: 37.5%;
+  }
+  .video.medium-11 {
+    width: 41.66667%;
+  }
 .js-video {
 height: 0;
 padding-top: 25px;
@@ -596,5 +634,10 @@ position: absolute;
   	outline: none;
   }
 
-
-}
+  footer.footer-conselho {
+      background: #EEE;
+  }
+ .footer-links,.footer-links.text-right  a img {
+    padding-right: 5px;
+  }
+  
