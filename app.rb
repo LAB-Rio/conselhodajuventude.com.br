@@ -2,12 +2,20 @@ require 'sinatra'
 
 enable :static
 
-get '/inscricao' do
+get '/inscricao.' do
+  redirect "https://docs.google.com/forms/d/14lPJko-tdXubeCcJnaeYhrh-JOuyJLB_0FeMO7n0qrM/viewform"
+end
+
+get  '/inscricao.' do
   redirect "https://docs.google.com/forms/d/14lPJko-tdXubeCcJnaeYhrh-JOuyJLB_0FeMO7n0qrM/viewform"
 end
 
 get '/calendario' do
-  send_file 'public/calendario.html'
+  slim :calendario, :layout => true
+end
+
+get '/calendario.' do
+  slim :calendario, :layout => true
 end
 
 get '/' do
@@ -15,14 +23,22 @@ get '/' do
   slim :home
 end
 
-get '/sobre' do
+get '/sobre'  do
   slim :sobre, :layout => true
 end
 
-get '/home' do
+get  '/o-conselho' do
+  slim :sobre, :layout => true
+end
+
+get '/home'  do
   slim :home, :layout => true
 end
 
-get '/transparencia' do
+get '/inicio' do
+  slim :home, :layout => true
+end
+
+get '/transparencia' || '/visoes' || '/videos' do
     slim :transparencia, :layout => true
 end
