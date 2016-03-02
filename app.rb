@@ -1,4 +1,5 @@
 require 'sinatra'
+require 'rdiscount'
 
 enable :static
 
@@ -12,6 +13,10 @@ end
 
 get '/calendario' do
   slim :calendario, :layout => true
+end
+
+get '/regimento' do
+   markdown :regimento
 end
 
 get '/calendario.' do

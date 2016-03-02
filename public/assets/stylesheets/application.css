@@ -9,12 +9,24 @@
 
 iframe { border: none }
 body { -webkit-font-smoothing: antialiased; background: #EEEEEE } 
+body.site-flex { background: #fff; }
 h2 { font-family: "Francois One"; text-transform: uppercase; color: #C57FC1; text-align: center; font-weight: bold }
 .logo{
   margin-top: 10px;
 }
+
+.article-regimento .title-regimento{
+    color: #000;
+  }
+.article-regimento  li{
+    padding: 5px auto;
+}
+.article-regimento ul li{
+    list-style: none;
+}
 /* end Default Rules */
 .title { font-size: 40px; color: #000; }
+.title-calendar { text-align: center; background: #eee; }
 .title-underline:after {
     position: absolute;
     content: '';
@@ -27,8 +39,19 @@ h2 { font-family: "Francois One"; text-transform: uppercase; color: #C57FC1; tex
 
 }
 
+/*calendar table*/
+.middle { color: #fff; }
+.green-dark a { color: #fff; }
+.green-dark { background: #117369; }
+.green-dark-light { background: #138075; }
+.green-light { background: #14887c; }
+
+.green-dark-second {
+    background: #12796e;
+}
+.green-very-light { background: #12796e; }
 /*Component Avatar*/
-.card { }
+
 .avatar { border-radius: 50%; max-width:100%;  height: 200px; width: 200px;}
 .avatar .avatar__name { font-size:2em;}
 .avatar .avatar__info { font-size: 10px;}
@@ -408,16 +431,10 @@ button:focus, .button:hover, .button:focus {
 }
 
 
-
 .cloud-left2 { 
   -webkit-animation: move-right 280s infinite;
   animation: move-right 280s infinite;
 }
-
- 
-
-
-
 
 
 .cloud-right2 { 
@@ -449,8 +466,6 @@ button:focus, .button:hover, .button:focus {
   animation: move-right 15s infinite;
 }
 
-
-
 .move-left {
   -webkit-animation: move-left 20s infinite;
   animation: move-left 20s infinite;
@@ -464,26 +479,16 @@ button:focus, .button:hover, .button:focus {
 .animate-15 { -webkit-animation: fromTop 1.4s linear; animation: fromTop 1.4s linear; }
 
 
-
-
-
-
 @-webkit-keyframes move-left { 
     0% { right: 0% }
     100% { right: 100% } 
 }
 
 
-
 @keyframes move-left { 
     0% { right: 0% }
     100% { right: 100% }
 }
-
-
-
-
-
 
 
 @-webkit-keyframes move-right { 
@@ -613,7 +618,7 @@ position: absolute;
   	stroke: #fff;
   	stroke-width: 60px;
   	stroke-linecap: round;
-      stroke-linejoin: round;
+    stroke-linejoin: round;
   	fill: transparent;
   }
   
@@ -641,3 +646,25 @@ position: absolute;
     padding-right: 5px;
   }
   
+  /*Regimento Title */
+  
+  #regimento h1.title-regimento{
+    font-size: 20px;
+    color: #eee;
+    font-weight: bold;
+  }
+  #regimento p {
+    padding: 2em ;
+  }
+  
+  article#regimento p {
+    padding: 2em;
+  }
+  
+  header .title-flex.title-underline.calendario {
+    background: #C57FC1;
+  }
+  
+  .article-regimento .title-regimento{
+    color: #000;
+  }
