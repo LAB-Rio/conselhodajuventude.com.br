@@ -1,5 +1,8 @@
 require 'sinatra'
 require 'rdiscount'
+require 'open-uri'
+require 'json'
+require 'pp'
 
 enable :static
 
@@ -16,7 +19,7 @@ get '/calendario' do
 end
 
 get '/regimento' do
-   markdown :regimento
+   redirect "/sobre#regimento"
 end
 
 get '/calendario.' do

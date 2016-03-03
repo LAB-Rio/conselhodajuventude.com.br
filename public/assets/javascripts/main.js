@@ -13,3 +13,17 @@ $('#vejamais').find('li:gt(5)').addClass('toggletr').hide()
       }
  })
 );
+
+$('.fevereiro').click(function(){
+  $('.middle-fevereiro').slideToggle('slow', function() {
+    // Animation complete.
+  });
+  $('.reply').toggle();
+});
+
+$('.marco').click(function(){
+  $('.middle-marco').slideToggle('slow', function() {
+    // Animation complete.
+  });
+  $('.reply').toggle();
+});
