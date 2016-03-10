@@ -41,6 +41,287 @@ h2 { font-family: "Francois One"; text-transform: uppercase; color: #C57FC1; tex
 
 }
 
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+	@media only screen and (max-width: 479px) {
+	  
+	  
+	    #menu_overlay {
+        background: rgba(197, 127, 193, .98);
+        opacity: 1;
+        min-height: 100%;
+        position: absolute;
+        z-index: 1000;
+        right: 100%;
+        min-width: 100%;
+	      
+	    }
+	    
+	    #menu_overlay a {
+        text-decoration: none;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 22px;
+      }
+      
+      #menu_overlay h5 a {
+        transition: color .2s ease-out, background 0.5s ease-in;
+      }
+      
+      #menu_overlay .menu_close {
+        position: absolute;
+        right: 10px;
+        top: 40px;
+      }
+      
+      #menu_overlay h5 {
+        font-family: "Francois One";
+        text-transform: uppercase;
+        color: #fff;
+      }
+      
+      .icon-tg-title {
+        width: 62px;
+        height: 14px;
+        display: inline-block;
+        vertical-align: middle;
+        background-image: url(../images/icone-conselho.svg);
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        margin-top: 1px;
+      }
+      
+      .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 26px;
+      }
+      .header-toggle-menu{
+        display: table-cell;.
+      }
+      .header-toggle-menu:before {
+        box-sizing: content-box;
+        content: "";
+        position: absolute;
+        top: 21px;
+        left: 0;
+        width: 1em;
+        height: .125em;
+        border-top: .375em double #fff;
+        border-bottom: .125em solid #fff;
+      }
+
+      
+      a.close-menu img{
+        
+        border: none;
+        width: 3em;
+        top: -10px;
+        position: relative;
+      }
+      .menu_nav_overlay {
+        background: #c3e7ee;
+        opacity: 0.96;
+        min-height: 100%;
+        position: absolute;
+        z-index: 1000;
+        right: 100%;
+        transition: right 1s ease-in-out;
+        -webkit-transition: right 1s ease-in-out;
+        -moz-transition: right 1s ease-in-out;
+        -o-transition: right 1s ease-in-out;
+        -ms-transition: right 1s ease-in-out;
+      }
+      
+      #menu_overlay hr {
+        color: rgba(255, 255, 255, .5);
+        border: 1px solid rgba(255, 255, 255, .5);
+        opacity: 0.5;
+      }
+      
+
+			.quote .container .one, .latestPost h2, .zopim  {
+				display: none !important;
+			}
+			
+			.quote .container .four, .footer .container .two, .header .container, .header .container .three, .nav .container .two.columns, .nav .container, .clients .container .crot {
+				width: 100%;
+			}
+			
+			.footer .container .two {
+				text-align: center;
+			}
+
+			.quote .container .quoteText h4 {
+				margin-top: 70px;
+			}
+			
+			.logo-footer {
+				float: none;
+			}
+
+			.header .container .mail {
+				height: auto;
+			}	
+
+			.header .buttons {
+				width: auto;
+				float: none;
+			}
+			
+			.footer .container {
+				width: 100%;
+			}
+				
+			body {
+				padding-left: 0px;
+				padding-right: 0px;
+			}
+	
+			#logo {
+				text-align: right;
+			}
+			
+			.header .buttons {
+				width: auto;
+				float: none;
+			}
+	
+	
+			.whyus .testimonials .testiName {
+				margin-top: 30px !important;
+			}
+	
+		/* Header section amendments */
+	
+			.header_img h1 {
+				font-size: 2.4em;
+				line-height: 1.4em;
+				margin-top: 175px;
+			}	
+			.menu {
+				right: 0;
+				position: absolute;
+				top: 0;
+				margin: 5px 0 0 0;
+				background-color: transparent;
+			}
+
+			.container, .clients .container .clientLine {
+				width: 320px;
+			}
+			
+			.serviceRotator {
+				width: 275px !important;
+			}
+
+			#mailImage {
+				position: absolute;
+				top: 0px;
+			}
+			
+			.header .container {
+				float: left;
+			}
+			
+			.header .mail {
+				float: left;
+			}
+
+			.serviceRotator #slides {
+				max-width: 440px;
+				width: 464px;
+			}
+
+			.latestPost .right {
+				float: left;
+				margin-top: 60px;
+				width: 440px;
+			}	
+			
+			.serviceRotator #slides .slidesjs-slide {
+				margin-left: 5px;
+				width: 285px !important;
+			}			
+
+			.nav {
+				height: 360px;
+			}
+			
+			.nav .web, body .nav .apps, body .nav .branding{
+				width: 100%;
+				clear: both;
+			}
+			
+			.nav .two {
+				padding: 0px;
+			}
+
+			.nav .two h4 {
+				padding: 45px 0;
+			}
+
+			.nav .two h4:hover  {
+				color: white;
+			}			
+
+		
+			
+			/* Menu */	
+			
+			#menu_overlay h5 {
+				font-size: 20px;
+				margin: 15px 0 0 35px;
+			}
+			
+			#menu_overlay .menu_close {
+				top: 20px;
+			}
+
+			#menu_overlay a {
+				font-size: 15px;
+			}			
+			
+			.menuPosts	{
+				display: none;
+			}
+			
+		
+			h2.header {
+				line-height: 1.1em;
+				margin-top: 30px;
+				text-align: center;
+			}
+			
+			.clientsHeaderTop {
+				width: 320px;
+			}
+			
+			.hideMe {
+				display: none;
+			}
+			
+
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*calendar table*/
 .middle { color: #fff; }
 .green-dark { border-bottom: 1px solid #fff;}
@@ -76,6 +357,10 @@ h2 { font-family: "Francois One"; text-transform: uppercase; color: #C57FC1; tex
   background: #eee;
   display: flex;
   flex-flow: row wrap;
+  margin-top: 10px;
+  border-radius: 2px;
+  
+}
 }
 .title-calendar{
   justify-content: center;
@@ -87,6 +372,82 @@ img.icone-calendar{
 a.button-toggle{
   justify-content: flex-end;
 }
+
+
+/*table flexbox */
+.wrap {
+    display: flex;
+    width: 100% ;
+    justify-content: center;
+}
+.cell {
+    display: flex;
+    height: 3rem;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+}
+.cell-title {
+  font-weight: 600;
+}
+.place{
+  font-size: 15px;
+}
+#calendario .title-flex:after {
+content: '';
+border: none;
+  
+}
+.add {
+    background-color: gold;
+    width: 10%;
+    justify-content: center;
+}
+.remove {
+    background-color: red;
+    width: 10%;
+    justify-content: center;
+}
+/*Mobile*/
+@media only screen and (max-device-width: 480px) {
+  /*Logo Size*/
+  .small-3 {
+    width: 65%;
+  }
+  #sobre-oconselho .title-underline:after {
+    content:"";
+    display:none;
+  }
+  
+  /*Regimento*/
+  article.article-regimento {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .Aligner-item {
+    max-width: 85%;
+  }
+  header .title-flex {
+    font-size: 18px;
+  }
+  p{
+     text-align: justify;
+    text-justify: inter-word;
+
+  }
+  
+  p.description.avatar__info
+  {
+    text-align: center;
+  }
+  span.icon img {
+    width: 220px;
+  }
+  .title {
+    font-size: 33px;
+    color: #000;
+}
+}  
 /*Component Avatar*/
 
 .avatar { border-radius: 50%; max-width:100%;  height: 200px; width: 200px;}
@@ -216,7 +577,16 @@ a.button-toggle{
 .text-uppercase { text-transform: uppercase; }
 
 .iframe-width iframe { width: 90%; margin: 0 auto; display: block } 
-
+#header{
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+#header #menu.mobile {
+  visibility: hidden;
+}
 #header { background: #C57FC1; color: white;}
 #header .nav a { color: white;  font-family: 'Francois One'; display: inline-block; margin-left: 1em; padding: .8em; }
 header .title-flex { margin-top: 90px; margin-bottom: 60px; color: #000; font-weight: 300;}
@@ -277,7 +647,7 @@ h2.title.-white.title-underline:after {
 }
 #sobre-oconselho .title-underline:after {
     content: '';
-    bottom: 47.5rem;
+    bottom: 67.5rem;
 }
 
 span.icon img {
@@ -611,6 +981,31 @@ position: absolute;
   width:335px; height:194px;}
 }
 
+
+
+
+
+ footer.footer-conselho {
+    background: #EEE;
+    display: flex;
+    margin-top: 20px;
+  }
+  .footer-github{
+    justify-content: flex-start;
+    margin-bottom: -46px;
+  }
+  
+ .footer-links,.footer-links.text-right  a img {
+    padding-right: 5px;
+    justify-content: flex-end;
+  }
+
+
+
+
+
+
+
 /*
 
   Menu mobile
@@ -620,7 +1015,32 @@ position: absolute;
 
 @media only screen and (max-width : 480px) {
   
-  nav.menu.menu--conselho{
+  #header #menu.mobile {
+    visibility: visible;
+  }
+  
+  .button{
+    background-color: #C57FC1;
+  }
+  
+  button.button:active{
+    background-color: transparent;
+  }
+  
+  button:hover, button:focus, .button:hover, .button:focus {
+    background-color: transparent;
+  }
+  
+  button.mobile{
+    padding-right: 3rem;
+    font-size: 2rem;
+  }
+  
+  .svg-menu img {
+    width: 1.25em;
+  }
+
+  .menu--conselho{
     visibility: hidden;
   }
   .menu-icon-wrapper {
@@ -651,13 +1071,7 @@ position: absolute;
   	transform-origin: 0 0;
   }
   
-  .menu-icon-wrapper svg path {
-  	stroke: #fff;
-  	stroke-width: 60px;
-  	stroke-linecap: round;
-    stroke-linejoin: round;
-  	fill: transparent;
-  }
+
   
   .menu-icon-wrapper .menu-icon-trigger {
   	position: relative;
@@ -677,10 +1091,16 @@ position: absolute;
   }
 
   footer.footer-conselho {
-      background: #EEE;
+    background: #EEE;
+    display: flex;
   }
+  .footer-github{
+    justify-content: flex-start;
+  }
+  
  .footer-links,.footer-links.text-right  a img {
     padding-right: 5px;
+    justify-content: flex-end;
   }
   
   /*Regimento Title */

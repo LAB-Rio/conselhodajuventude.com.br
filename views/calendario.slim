@@ -6,61 +6,200 @@ section#calendario.calendario
                      h2.title-flex.title-underline.calendario  Calendário
                      p.description Aqui vocês encontram todos so locais dos próximos encontros até outubro de 2016.
                      
-                div.calendar.fevereiro
+                
+                .calendar.fevereiro
                     h3.title-calendar Fevereiro 2016
                     a.button-toggle href="#"
                         img.icone-calendar src="assets/images/button-calendar-gray.png"
+                
+                .wrap.middle-fevereiro style="display: none;"
+                    .cell.cell-title.green-dark Evento
+                    .cell.cell-title.green-dark-second Data
+                    .cell.cell-title.green-dark-light Bairro
+                    .cell.cell-title.green-light AP
+                    .cell.cell-title.green-very-light Local
+
+                .wrap.middle-fevereiro style="display: none;"
+                    .cell.green-dark
+                        a.linkEvents(href="https://www.facebook.com/events/488576954681071/" alt="9º Encontro do Conselho da Juventude da Cidade") 9º Encontro
                     
-                table.middle-fevereiro  style="display:none;"    
-                    thead 
-                        tr 
-                            th.green-dark width="800"  Evento
-                            th.green-dark-second width="200"  Data
-                            th.green-dark-light width="200"  Bairro
-                            th.green-light width="200"  AP
-                            th.green-very-light width="200"  Local
-                            
-                    tbody
-                        tr
-                            td.green-dark 
-                                a.linkEvents(href="https://www.facebook.com/events/488576954681071/" alt="9º Encontro do Conselho da Juventude da Cidade") 9º Encontro do Conselho da Juventude da Cidade
-                            
-                            td.green-dark-second   20/02/2016
-                            td.green-dark-light Gloria
-                            td.green-light
-                            td.green-very-light
-                                a.linkEvents(href="http://www0.rio.rj.gov.br/memorialgetuliovargas/" alt="Memorial Getulio Vargas") Memórial Getulio Vargas
-                                
-                                
-                    
-                div.calendar.marco
+                    .cell.green-dark-second 20/02/2016
+                    .cell.green-dark-light Gloria
+                    .cell.green-light AP
+                    .cell.green-very-light.place
+                        a.linkEvents(href="http://www0.rio.rj.gov.br/memorialgetuliovargas/" alt="Memorial Getulio Vargas" target="_blank") Memórial Getulio Vargas
+        
+    
+                .calendar.marco
                     h3.title-calendar Março 2016
                     a.button-toggle href="#"
                         img.icone-calendar src="assets/images/button-calendar-green.png"
+                
+                .wrap.middle-marco
+                    .cell.cell-title.green-dark Evento
+                    .cell.cell-title.green-dark-second Data
+                    .cell.cell-title.green-dark-light Bairro
+                    .cell.cell-title.green-light AP
+                    .cell.cell-title.green-very-light Local
+
+                .wrap.middle-marco   
+                    .cell.green-dark 
+                        a.linkEvents(href="https://www.facebook.com/events/488576954681071/" alt="10º Encontro do Conselho da Juventude da Cidade" target="_blank") 10º Encontro 
                     
-                table.middle-marco                 
-                    thead 
-                        tr 
-                            th.green-dark width="800"  Evento
-                            th.green-dark-second width="200"  Data
-                            th.green-dark-light width="200"  Bairro
-                            th.green-light width="200"  AP
-                            th.green-very-light width="200"  Local
-                            
-                    tbody
-                        tr
-                            td.green-dark 
-                                a.linkEvents(href="https://www.facebook.com/events/488576954681071/" alt="10º Encontro do Conselho da Juventude da Cidade") 10º Encontro do Conselho da Juventude da Cidade
-                            
-                            td.green-dark-second   05/03/2016
-                            td.green-dark-light Rocinha
-                            td.green-light AP 2
-                            td.green-very-light
-                                a.linkEvents(href="http://www.cultura.rj.gov.br/espaco/biblioteca-parque-da-rocinha-c4" alt="Memorial Getulio Vargas") Biblioteca Parque Rocinha
+                    .cell.green-dark-second   05/03/2016
+                    .cell.green-dark-light Rocinha
+                    .cell.green-light AP 2
+                    .cell.green-very-light.place
+                        a.linkEvents(href="http://www.cultura.rj.gov.br/espaco/biblioteca-parque-da-rocinha-c4" alt="Biblioteca Parque Rocinha" target="_blank") Biblioteca Parque Rocinha
                                     
-                        
-                div.calendar.final
+                
+                .wrap.middle-marco
+                    .cell.green-dark
+                        a.linkEvents(href="https://www.facebook.com/events/#/"   target="_blank" alt="11º Encontro do Conselho da Juventude da Cidade") 11º Encontro
+                    
+                    .cell.green-dark-second 19/03/2016
+                    .cell.green-dark-light Penha
+                    .cell.green-light AP 3
+                    .cell.green-very-light.place
+                        a.linkEvents(href="http://arenacariocadicro.org.br/contato/como-chegar/" alt="Arena Dicró"  target="_blank") Arena Dicró
+                
+                
+                   
+                .calendar.abril
                     h3.title-calendar Abril 2016
                     a.button-toggle href="#"
+                        img.icone-calendar src="assets/images/button-calendar-green.png"
+                        
+                .wrap.middle-abril style="display: none;"
+                    .cell.green-dark
+                        a.linkEvents(href="https://www.facebook.com/events/#/" alt="12º Encontro do Conselho da Juventude da Cidade"  target="_blank") 12º Encontro
+                    
+                    .cell.green-dark-second 02/04/2016
+                    .cell.green-dark-light Santa Cruz
+                    .cell.green-light AP 5
+                    .cell.green-very-light.place
+                        a.linkEvents(href="http://www.pracadoconhecimento.org.br/novo/pracas-e-naves/santa-cruz/" alt="Nave do Conhecimento" target="_blank")Nave do Conhecimento
+                
+                .calendar.maio
+                    h3.title-calendar Maio 2016
+                    a.button-toggle href="#"
+                        img.icone-calendar src="assets/images/button-calendar-green.png"
+                        
+                .wrap.middle-maio style="display: none;"
+                    .cell.green-dark
+                        a.linkEvents(href="https://www.facebook.com/events/#/" alt="13º Encontro do Conselho da Juventude da Cidade"  target="_blank") 13º Encontro
+                    
+                    .cell.green-dark-second 14/05/2016
+                    .cell.green-dark-light Meiér
+                    .cell.green-light AP 3
+                    .cell.green-very-light.place
+                        a.linkEvents(href="http://www.imperator.art.br/" alt="imperator" target="_blank")Imperator
+                    
+                .wrap.middle-maio style="display: none;"     
+                    .cell.green-dark
+                        a.linkEvents(href="https://www.facebook.com/events/#/" alt="14º Encontro do Conselho da Juventude da Cidade"  target="_blank") 14º Encontro
+                    
+                    .cell.green-dark-second 28/05/2016
+                    .cell.green-dark-light Centro
+                    .cell.green-light AP 1
+                    .cell.green-very-light.place
+                        a.linkEvents(href="http://www.museudeartedorio.org.br/" alt="MAR" target="_blank")MAR
+                
+                
+                .calendar.junho
+                    h3.title-calendar Junho 2016
+                    a.button-toggle href="#"
+                        img.icone-calendar src="assets/images/button-calendar-green.png"
+                        
+                .wrap.middle-junho style="display: none;"
+                
+                    .cell.green-dark
+                        a.linkEvents(href="https://www.facebook.com/events/#/" alt="15º Encontro do Conselho da Juventude da Cidade"  target="_blank") 15º Encontro
+                    
+                    .cell.green-dark-second 11/06/2016
+                    .cell.green-dark-light Madureira
+                    .cell.green-light AP 3
+                    .cell.green-very-light.place
+                        a.linkEvents(href="http://www.cidadeolimpica.com.br/parque-madureira/" alt="Parque Madureira" target="_blank")Parque Madureira
+                        
+                .wrap.middle-junho style="display: none;"     
+                    .cell.green-dark
+                        a.linkEvents(href="https://www.facebook.com/events/#/" alt="16º Encontro do Conselho da Juventude da Cidade"  target="_blank") 16º Encontro
+                    
+                    .cell.green-dark-second 25/06/2016
+                    .cell.green-dark-light Jacarépagua
+                    .cell.green-light AP 4
+                    .cell.green-very-light.place
+                        a.linkEvents(href="https://www.facebook.com/CentroCulturalProfaDylaSylviaDeSa/" alt="Centro Cultural Prof. Dyla Sylvia de Sá" target="_blank")Prof. Dyla Sylvia de Sá
+                
+                .calendar.julho
+                    h3.title-calendar Julho 2016
+                    a.button-toggle href="#"
+                        img.icone-calendar src="assets/images/button-calendar-green.png"
+                        
+                .wrap.middle-julho style="display: none;"
+                    
+                    .cell.green-dark
+                        a.linkEvents(href="https://www.facebook.com/events/#/" alt="17º Encontro do Conselho da Juventude da Cidade"  target="_blank") 17º Encontro
+                    
+                    .cell.green-dark-second 09/07/2016
+                    .cell.green-dark-light Centro
+                    .cell.green-light AP 1
+                    .cell.green-very-light.place
+                        a.linkEvents(href="https://www.facebook.com/CMA.HelioOiticica/" alt="Centro de Artes Hélio Oiticica " target="_blank")Centro de Artes Hélio Oiticica
+                
+                
+                .wrap.middle-julho style="display: none;"
+                    
+                    .cell.green-dark
+                        a.linkEvents(href="https://www.facebook.com/events/#/" alt="18º Encontro do Conselho da Juventude da Cidade"  target="_blank") 18º Encontro
+                        
+                    .cell.green-dark-second 23/07/2016
+                    .cell.green-dark-light Flamengo
+                    .cell.green-light AP 2
+                    .cell.green-very-light.place
+                        a.linkEvents(href="https://pt-br.facebook.com/Castelinho-do-Flamengo-Centro-Cultural-Oduvaldo-Vianna-Filho-293808147442286/" alt="Castelinho do Flamengo " target="_blank")Castelinho do Flamengo
+                
+                
+                .calendar.agosto
+                    h3.title-calendar Agosto 2016
+                    a.button-toggle href="#"
                         img.icone-calendar src="assets/images/button-calendar-gray.png"
+                        
+                .wrap.middle-agosto style="display: none;"
+                    
+                    .cell.green-dark
+                        a.linkEvents(href="https://www.facebook.com/events/#/" alt="19º Encontro do Conselho da Juventude da Cidade"  target="_blank") 19º Encontro
+                        
+                    .cell.green-dark-second 06/08/2016
+                    .cell.green-dark-light Manguinhos
+                    .cell.green-light AP 3
+                    .cell.green-very-light.place
+                        a.linkEvents(href="https://pt-br.facebook.com/Castelinho-do-Flamengo-Centro-Cultural-Oduvaldo-Vianna-Filho-293808147442286/" alt="Biblioteca Parque Manguinhos" target="_blank")Biblioteca Parque Manguinhos
+                
+                .wrap.middle-agosto style="display: none;"
+                
+                    .cell.green-dark
+                        a.linkEvents(href="https://www.facebook.com/events/#/" alt="20º Encontro do Conselho da Juventude da Cidade"  target="_blank") 20º Encontro
+                        
+                    .cell.green-dark-second 23/07/2016
+                    .cell.green-dark-light Flamengo
+                    .cell.green-light AP 2
+                    .cell.green-very-light.place
+                        a.linkEvents(href="https://pt-br.facebook.com/Castelinho-do-Flamengo-Centro-Cultural-Oduvaldo-Vianna-Filho-293808147442286/" alt="Castelinho do Flamengo " target="_blank")Castelinho do Flamengo
+                
+                .calendar.setembro
+                    h3.title-calendar Setembro 2016
+                    a.button-toggle href="#"
+                        img.icone-calendar src="assets/images/button-calendar-gray.png"
+                        
+                .wrap.middle-setembro style="display: none;"
+                
+                
+                .calendar.outubro
+                    h3.title-calendar Outubro 2016
+                    a.button-toggle href="#"
+                        img.icone-calendar src="assets/images/button-calendar-gray.png"
+                        
+                .wrap.middle-outubro style="display: none;"
 

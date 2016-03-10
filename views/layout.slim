@@ -13,7 +13,8 @@ html lang="pt-br"
         meta name="description" content="O Conselho da Juventude da Cidade é uma via democrática de participação jovem dentro da gestão municipal e tem caráter consultivo."
         meta name="viewport" content="width-device-width, initial-scale=1"
         meta property="og:image" content="http://i.imgur.com/47NkYMK.png"
-        link rel="shortcut icon" href="./assets/images/favicon.png" type="image/png"
+        meta name="viewport" content="width=device-width, initial-scale=1.0"
+        link rel="shortcut icon" href="http://www.labrio.cc/assets/images/favicon.png" type="image/png"
 
         
         link type="text/css" rel="stylesheet" href="./assets/stylesheets/normalize.css"
@@ -26,14 +27,43 @@ html lang="pt-br"
         /[if lt IE 7]
             p.browsehappy
                 You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.
+        
+        section#menu_overlay
+            .menu_nav_overlay
 
+            .container
+                .six.columns
+                    h5 menu
+                    
+                    .menu_close
+                        a.close-menu href="#" onclick="closeMenu()" 
+                            img src="assets/images/menu_close.png" alt="Close Menu" data-pin-nopin="true"
+                    
+                    hr
+                
+                .two.columns
+                    h5
+                        a.link-mobile href="/" home 
+                    
+                    h5
+                        a.link-mobile alt="Sobre o Conselho da Juventude da Cidade"  href='/sobre' Sobre
+                
+                    h5
+                        a.link-mobile alt="Transparencia" href='/transparencia' Transparencia
+                    
+                    h5
+                        a.link-mobile alt="calendario" href='/calendario' Calendário
+                
+                        
+                        
         header#header.header-content
             .row
-                .medium-8.large-8.small-3.logo.columns
+                nav.medium-8.large-8.small-3.logo.columns
                     a href="/" alt="Pagina Principal conselho da Juventude da Cidade"
                         img src="/assets/images/logo.png" alt="Conselho da Juventude"
                 
-                nav.menu.menu--conselho
+                nav.menu.menu--conselho role="navigation"
+                    
                     ul.menu__list
                         li.menu__list
                             a.menu__link< alt="Sobre o Conselho da Juventude da Cidade" href='/sobre' Sobre 
@@ -43,13 +73,22 @@ html lang="pt-br"
                         
                         li.menu__list
                             a.menu__link< alt="calendario" href='/calendario' Calendário
-                            
-                        li.menu__list
-                            span.github-iframe
-                                iframe.github src="https://ghbtns.com/github-btn.html?user=LAB-Rio&repo=conselhodajuventude.com.br&type=watch&count=true&size=large" frameborder="0" scrolling="0" width="170px" height="30px"
+            
+               
+                    button#menu.menu.mobile onclick="callMenu()"
+                       .header-toggle-menu
         == yield
         
-        
+        footer.footer-conselho.darker
+            .footer-github
+                    iframe.github src="https://ghbtns.com/github-btn.html?user=LAB-Rio&repo=conselhodajuventude.com.br&type=watch&count=true&size=large" frameborder="0" scrolling="0" width="170px" height="30px"
+            .footer-links.text-right
+                
+                    a.lab-rio-link(href="http://labrio.cc" target="_blank")
+                        img src="./assets/images/labrio.png" alt="Lab.RIO" width="50"
+                    
+                    a.prefeitura-do-rio-de-janeiro(href="http://prefeitura.rio" target="_blank")
+                        img src="./assets/images/prefeitura.png" width="60" alt="Prefeitura do Rio de Janeiro"/
         
 
         script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"

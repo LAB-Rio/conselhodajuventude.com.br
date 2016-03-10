@@ -50,3 +50,4 @@ end
 get '/transparencia' || '/visoes' || '/videos' do
     slim :transparencia, :layout => true
 end
+
