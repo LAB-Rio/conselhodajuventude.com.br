@@ -368,6 +368,7 @@ h2 { font-family: "Francois One"; text-transform: uppercase; color: #C57FC1; tex
 img.icone-calendar{
   position: absolute;
   right: 20px;
+  width: 40px;
 }
 a.button-toggle{
   justify-content: flex-end;
@@ -377,16 +378,18 @@ a.button-toggle{
 /*table flexbox */
 .wrap {
     display: flex;
-    width: 100% ;
+    max-width: 100%;
     justify-content: center;
+
 }
 .cell {
     display: flex;
+    max-width: 100%;
+    width: 23rem;
     height: 3rem;
     align-items: center;
-    width: 100%;
     padding: 10px;
-}
+  }
 .cell-title {
   font-weight: 600;
 }
@@ -408,6 +411,34 @@ border: none;
     width: 10%;
     justify-content: center;
 }
+
+
+@media only screen and (max-width : 480px) {
+  header .title-flex.title-underline.calendario{
+    background-color: transparent;
+  }
+  
+  a.linkEvents{
+    font-size: 0;
+  }
+  a.linkEvents:after{
+    content: "";
+    width: 10px;
+    height: 10px;
+    background: url('../images/pin.png');
+  }
+  .wrap{
+    font-size: 11px;
+  }
+  
+  .cell.green-very-light.place a:after{
+    content: "local";
+    position: absolute;
+    
+  }
+  
+}
+
 /*Mobile*/
 @media only screen and (max-device-width: 480px) {
   /*Logo Size*/
@@ -585,7 +616,7 @@ border: none;
   margin-bottom: 0;
 }
 #header #menu.mobile {
-  visibility: hidden;
+  display: none;
 }
 #header { background: #C57FC1; color: white;}
 #header .nav a { color: white;  font-family: 'Francois One'; display: inline-block; margin-left: 1em; padding: .8em; }
@@ -1011,12 +1042,11 @@ position: absolute;
   Menu mobile
 */
 
-
-
 @media only screen and (max-width : 480px) {
   
+  
   #header #menu.mobile {
-    visibility: visible;
+    display: block;
   }
   
   .button{
@@ -1118,10 +1148,7 @@ position: absolute;
     padding: 2em;
   }
   
-  header .title-flex.title-underline.calendario {
-    background: #C57FC1;
-  }
-  
+
   .article-regimento .title-regimento{
     color: #000;
   }
