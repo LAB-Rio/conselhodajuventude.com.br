@@ -418,15 +418,6 @@ border: none;
     background-color: transparent;
   }
   
-  a.linkEvents{
-    font-size: 0;
-  }
-  a.linkEvents:after{
-    content: "";
-    width: 10px;
-    height: 10px;
-    background: url('../images/pin.png');
-  }
   .wrap{
     font-size: 11px;
   }
@@ -1041,12 +1032,43 @@ position: absolute;
 
   Menu mobile
 */
+.green-dark a{
+  font-size: 13px;
+}
 
 @media only screen and (max-width : 480px) {
   
+  .cell.cell-title.green-dark {
+    display: none;
+  }
+  
+  .cell.green-dark {
+      display: none;
+  }
+  
+  .cell.cell-title.green-light {
+      display: none;
+  }
+  
+  .cell.green-light {
+      display: none;
+  }
+  
+  a.linkEvents {
+      font-size: 10px;
+  }
+  
+  
+  
+  
+  
+  #main-content h2 {
+    margin-top: 1em;
+  }
   
   #header #menu.mobile {
-    display: block;
+    display: inline-block;
+    visibility: visible;
   }
   
   .button{
