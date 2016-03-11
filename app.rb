@@ -1,8 +1,4 @@
 require 'sinatra'
-require 'rdiscount'
-require 'open-uri'
-require 'json'
-require 'pp'
 
 enable :static
 
