@@ -1,0 +1,8 @@
+# robots.txt for http://www.conselhodajuventude.com
+
+User-agent: *
+Disallow: /calendario.html
+Disallow: /transparencia.html
+Disallow: /saiba_mais.html
+Disallow: /sobre.html
+Disallow: /index.html
