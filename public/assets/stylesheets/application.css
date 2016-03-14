@@ -681,7 +681,9 @@ span.icon img {
 .MarcoLegal.Aligner.not-background{
   background: none;
 }
-
+footer.footer-conselho.darker {
+    padding: 10px;
+}
 .logo a { display: inline-block }
 
 .content-cards{
