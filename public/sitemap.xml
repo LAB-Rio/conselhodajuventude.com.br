@@ -12,21 +12,21 @@
 </url>
 
 <url>
-  <loc>http://conselhodajuventude.com/sobre/</loc>
+  <loc>http://conselhodajuventude.com/sobre</loc>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 
 <url>
-  <loc>http://conselhodajuventude.com/transparencia/</loc>
+  <loc>http://conselhodajuventude.com/transparencia</loc>
   <changefreq>weekly</changefreq>
-  <priority>0.70</priority>
+  <priority>0.50</priority>
 </url>
 
 <url>
-  <loc>http://conselhodajuventude.com/calendario/</loc>
+  <loc>http://conselhodajuventude.com/calendario</loc>
   <changefreq>weekly</changefreq>
-  <priority>0.60</priority>
+  <priority>0.70</priority>
 </url>
 
 </urlset>

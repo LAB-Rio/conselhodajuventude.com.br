@@ -681,10 +681,7 @@ span.icon img {
 .MarcoLegal.Aligner.not-background{
   background: none;
 }
-#visoes .title-underline:after {
-    content: '';
-    bottom: 29.5rem;
-}
+
 .logo a { display: inline-block }
 
 .content-cards{
