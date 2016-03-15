@@ -505,6 +505,12 @@ border: none;
 
 /*1024 x 768*/
 @media (min-width:769px) and (max-width:1024px){
+  
+  #sobre-oconselho .title-underline:after {
+    content: '';
+    bottom: 55.5rem;
+  }
+  
   .medium-8 {
     width: 53.66667%;
   }
