@@ -128,7 +128,7 @@
     linguagens de forma clara, simples e objetiva
     espaço acessível, livre de barreiras arquitetônicas que impeçam a autonomia de pessoas com deficiência e com mobilidade reduzida
     
-## Capitulo 5 - Das disposições gerais e transitórias
+##Capitulo 5 - Das disposições gerais e transitórias
     
     Art. 24 - Os canais e formas de comunicação externa oficial do Conselho da Juventude devem ser regulamentados por resolução em até 2 meses após a aprovação deste regimento.
     

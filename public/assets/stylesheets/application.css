@@ -41,6 +41,9 @@ h2 { font-family: "Francois One"; text-transform: uppercase; color: #C57FC1; tex
 
 }
 
+#menu_overlay{
+ opacity: 0;
+}
 
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 	@media only screen and (max-width: 479px) {
@@ -386,9 +389,8 @@ a.button-toggle{
     display: flex;
     max-width: 100%;
     width: 23rem;
-    height: 3rem;
     align-items: center;
-    padding: 10px;
+    padding: 5px;
   }
 .cell-title {
   font-weight: 600;
@@ -499,6 +501,23 @@ border: none;
     text-transform: uppercase;
     font-size: 14px;
 }
+
+
+/*1024 x 768*/
+@media (min-width:769px) and (max-width:1024px){
+  .medium-8 {
+    width: 53.66667%;
+  }
+  
+  .menu__list {
+    margin-top: 3px;
+  }
+  
+  h2 {
+    font-size: 2.1rem;
+  }
+}
+
 /*Menu*/
 .menu {
   line-height: 1;
@@ -613,7 +632,7 @@ header .title-flex { margin-top: 90px; margin-bottom: 60px; color: #000; font-we
     border-bottom: 2px solid #000;
 }
 #player, #player_wrapper { position: relative; margin: 0 auto; max-width: 560px; width: 100% !important; z-index: 9999; display: block; min-height: 300px; height: auto}
-.image { max-width: 100%; width: auto; height: 400px; background: url('../images/sobre-background.png') no-repeat center center fixed; 
+.image { max-width: 100%; width: auto; height: 400px; background: url('../images/Optimized-sobre-background.png') no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -624,7 +643,7 @@ header .title-flex { margin-top: 90px; margin-bottom: 60px; color: #000; font-we
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover; }
-.documentos { max-width: 100%; width: auto; height: auto; background: url('../images/documentos-img.png') no-repeat center center fixed; 
+.documentos { max-width: 100%; width: auto; height: auto; background: url('../images/Optimized-documentos-img.png') no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
