@@ -1202,4 +1202,8 @@ position: absolute;
     padding-bottom: 52.5%;
   }
   
+  footer.footer-conselho.darker {
+    margin-bottom: -112px;
+  }
+  
 }
