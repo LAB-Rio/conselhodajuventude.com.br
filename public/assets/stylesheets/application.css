@@ -720,6 +720,30 @@ footer.footer-conselho.darker {
     margin-bottom: -112px;
   }
 }
+
+
+
+@media screen and (min-width: 1440px) {
+
+  footer.footer-conselho.darker {
+    margin-bottom: -112px;
+  }
+    
+}
+@media screen and (min-width: 1600px) {
+
+  footer.footer-conselho.darker {
+    margin-bottom: -112px;
+  }
+    
+}
+@media screen and (min-width: 1920px) {
+  footer.footer-conselho.darker {
+    margin-bottom: -112px;
+  }
+}
+
+
 .logo a { display: inline-block }
 
 .content-cards{
@@ -1217,15 +1241,4 @@ position: absolute;
     margin-bottom: -112px;
   }
   
-}
-
-
-@media screen and (min-width: 1440px) {
-    
-}
-@media screen and (min-width: 1600px) {
-    
-}
-@media screen and (min-width: 1920px) {
-    
 }
