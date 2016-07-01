@@ -1194,3 +1194,12 @@ position: absolute;
   .article-regimento .title-regimento{
     color: #000;
   }
+
+
+@media only screen and (max-width : 1024px) {
+  
+  .js-video {
+    padding-bottom: 52.5%;
+  }
+  
+}
