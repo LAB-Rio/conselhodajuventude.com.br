@@ -706,8 +706,19 @@ span.icon img {
 .MarcoLegal.Aligner.not-background{
   background: none;
 }
+
 footer.footer-conselho.darker {
     padding: 10px;
+}
+
+@media screen and (max-width: 1366px) {
+  .js-video {
+    padding-bottom: 52.5%;
+  }
+  
+  footer.footer-conselho.darker {
+    margin-bottom: -112px;
+  }
 }
 .logo a { display: inline-block }
 
@@ -1208,15 +1219,7 @@ position: absolute;
   
 }
 
-@media screen and (min-width: 1366px) {
-    .js-video {
-    padding-bottom: 52.5%;
-  }
-  
-  footer.footer-conselho.darker {
-    margin-bottom: -112px;
-  }
-}
+
 @media screen and (min-width: 1440px) {
     
 }
