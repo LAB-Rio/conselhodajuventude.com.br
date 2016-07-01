@@ -713,7 +713,7 @@ footer.footer-conselho.darker {
 
 @media screen and (max-width: 1366px) {
   .js-video {
-    padding-bottom: 52.5%;
+        padding-bottom: 50.5%;
   }
   
   footer.footer-conselho.darker {
